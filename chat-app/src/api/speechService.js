@@ -24,7 +24,7 @@ export async function transcribeAudio(audioBlob) {
     }
     
     if (!data.transcription) {
-      throw new Error('未能获取到转录文本')
+      throw new Error('didnt get audio transcribe from whisper model, did you say anything?')
     }
     
     return data.transcription
